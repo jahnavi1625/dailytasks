@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:forestgreen
+        }
+        p{
+            color:darkorchid;
+        }
+        li{
+            color:deeppink;
+        }
+        code{
+            color:firebrick
+        }
+        u{
+            color:mediumblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>WHAT IS CSS?</h1>
+    <p>CSS stands for Cascading Style Sheets and is used by web pages to help keep information in the proper display format. The major purpose of CSS is for describing the presentation of Web pages, including colors, layout, and fonts that allows adapting the presentation to different types of devices,
+         such as large screens, small screens, or printers.</p>
+    <u><h1>CSS STYLE TYPES</h1></u>
+    <ol>
+        <u><li>INLINE CSS</li></u>
+        <p>An inline CSS is used to apply a unique style to a single HTML element.
+
+            An inline CSS uses the style attribute of an HTML element.</p>
+            <pre>
+                <code><p>Example : </p>
+                    &lt;h1 style="color:blue;">A Blue Heading&lt;/h1>
+
+                    &lt;p style="color:red;">A red paragraph.&lt;/p>
+                </code>
+            </pre>
+        <u><li>INTERNAL CSS</li></u>
+        <p>An internal CSS is used to define a style for a single HTML page.
+
+            An internal CSS is defined in the head section of an HTML page, within a style element.</p>
+        <pre>
+            <code><p>Example : </p>
+                body {background-color: powderblue;}
+                h1   {color: blue;}
+                p    {color: red;}
+            </code>
+        </pre>
+        <u><li>EXTERNAL CSS</li></u>
+        <p>An external style sheet is used to define the style for many HTML pages.
+
+            To use an external style sheet, add a link to it in the head section of each HTML page</p>
+           <pre><code><p>Example : </p>
+            <p>In head tag: <br>&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+            <p>In .css file</p>
+            body {
+                background-color: powderblue;
+              }
+              h1 {
+                color: blue;
+              }
+              p {
+                color: red;
+              }
+            </code>
+            </pre>
+       
+    </ol>
+</body>
+</html>
