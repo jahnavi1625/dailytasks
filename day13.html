@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="select.css"/>
+</head>
+<body>
+    <h1>CSS SELECTORS</h1>
+    <h2>Types Of Selectors</h2>
+    <dl>
+        <dt class="head">Element Selector :</dt>
+        <dd>The element selector selects all elements with the specified element name
+            <pre>
+                <code>
+                    p {
+                        background-color: yellow;
+                      }
+                </code>
+            </pre>
+        </dd>
+        <dt class="head">Group Selector :</dt>
+        <dd>The grouping selector selects all the HTML elements with the same style definitions.
+            <pre>
+                <code>
+                    h1, h2, p {
+                        text-align: center;
+                        color: red;
+                      }
+                </code>
+            </pre>
+        </dd>
+        
+            <dt class="head">ID Selector :</dt>
+            <dd>The id selector uses the id attribute of an HTML element to select a specific element.
+
+                The id of an element is unique within a page, so the id selector is used to select one unique element!
+                
+                To select an element with a specific id, write a hash (#) character,followed by the id of the element.
+            <pre>
+                <code>
+                    #para1 {
+                        text-align: center;
+                        color: red;
+                      }
+                </code>
+            </pre>
+            </dd>
+            <dt class="head">Class Selector</dt>
+            <dd>The class selector selects HTML elements with a specific class attribute.
+
+            To select elements with a specific class, write a period (.) character, followed by the class name.
+            <pre>
+                <code>
+                .center {
+                    text-align: center;
+                    color: red;
+                  }
+                </code>
+            </pre>
+            </dd>
+            
+            <dt class="head">Universal Selector</dt>
+            <dd>The universal selector (*) selects all HTML elements on the page.
+                <pre>
+                    <code>
+                        * {
+                            text-align: center;
+                            color: blue;
+                          }  
+                    </code>
+                </pre>
+            </dd>
+            <dt class="head">Combinator Selector :</dt>
+            <dd>A combinator is something that explains the relationship between the selectors.
+
+                A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+                <p>Descendent Selector :<br>The descendant selector matches all elements that are descendants of a specified element.</p>
+                
+            <pre>
+                <code>
+                    div p {
+                        background-color: yellow;
+                      }
+                </code>
+            </pre>
+            <p>Child Selector :<br>The child selector selects all elements that are the children of a specified element.</p>
+            <pre>
+                <code>
+                    div > p {
+                        background-color: yellow;
+                      }
+                </code>
+            </pre>
+            </dd>
+
+    </dl>
+</body>
+</html>
