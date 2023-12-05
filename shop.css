@@ -1,0 +1,87 @@
+.im{
+    width: 120px;
+    height: 70px;
+}
+header{
+    background-color: black;
+}
+div.div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+ i{
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    position: relative;
+    top: 30px;
+}
+span>pre{
+    color: white;
+}
+input{
+    width: 40%;
+    height: 20px;
+    position: relative;
+    top: 25px;
+   
+}
+.fa-location-crosshairs{
+    position: relative;
+    top:20px;
+    left: 100px;
+}
+.fa-magnifying-glass{
+    height: 24px;
+    width: 20px;
+    background-color: rgb(254, 182, 88);
+    position: relative;
+    top: 25px;
+    right: 24px;
+} 
+p{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: beige;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   flex-wrap: wrap;
+   align-content: center;
+   align-items: flex-start;
+    
+}
+section.sec{
+    display:flex;
+    position: relative;
+    top: 20px;
+}
+aside{
+    width: 500px;
+    display: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.i1,.i2{
+    height: 282px;
+    width: 100%;
+}
+.i2{
+    position: relative;
+    top: 10px;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
