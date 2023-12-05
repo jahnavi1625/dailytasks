@@ -1,0 +1,45 @@
+body{
+    background-color: aqua;
+}
+input.d1:hover{
+    background-color: rgb(29, 189, 29);
+}
+input:invalid{
+    background-color: rgb(237, 75, 75);
+}
+input:checked{
+    background-color: rgb(152, 184, 20);
+}
+input:valid{
+    background-color: rgb(240, 135, 191);
+}
+form#f1{
+    position: relative;
+    left: 300px;
+}
+form#f2{
+    position: relative;
+    left: 300px;
+}
+.b1{
+    position: relative;
+    left: 400px;
+    top: 10px;
+}
+a.r1{
+    position: relative;
+    left: 380px;
+    top: 15px;
+}
+a.r1:link{
+    background-color: rgb(216, 208, 208);
+}
+a.r1:hover{
+   background-color: rgb(129, 255, 127);
+}
+a.r1:visited{
+   color: rgb(164, 117, 214);
+}
+a.r:active{
+    background-color: chocolate;
+}
