@@ -85,3 +85,37 @@ li{
     justify-content: space-between;
     flex-grow: 1;
 }
+section.sec2{
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly; 
+   position: relative;
+   top: 30px;  
+   flex-wrap: wrap;
+   align-content: center;
+   align-items: flex-start;
+}
+.th{
+    width: 280px;
+    height: 280px;
+}
+.hid{
+    height: 130px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    columns: 2;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+}
+div b{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+iframe{
+    width: 80%;
+    position: relative;
+    left: 150px;
+}
