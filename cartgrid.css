@@ -1,0 +1,143 @@
+.d1{
+    border: 1px solid black;
+    background-color: rgb(242, 248, 250);
+}
+.div1{
+    display: grid;
+    grid-template-columns: auto 100px auto auto 300px;
+    grid-template-rows: 100px 200px 250px 300px 300px ;
+}
+#i1{
+    background-color: black;
+    grid-column: 1/6;
+    color: white;
+}
+#is2{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#i2{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#i6{
+    background-color: black;
+    color: white;
+    grid-column: 1/5;
+}
+#s1,#s2,#s3{
+    grid-column: 3/5; 
+}
+img.im{
+    height: 100px;
+    width: 100px;
+}
+div#i1{
+    display: flex;
+    justify-content: space-evenly;
+}
+{
+    color: white;
+}
+i{
+    background-color: white;
+}
+a[id="a1"]{
+   position: relative;
+   left: 5px;
+   
+}
+input[id="inp"]{
+    height: 20px;
+    width: 50%;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+#p1{
+    position: relative;
+    left: 30px;
+}
+#p2{
+    position: relative;
+    left: 50px;  
+}
+.fa-cart-shopping{
+    position: relative;
+    top: 80px;
+}
+img.im1{
+    height: 100px;
+    width: 100px;
+}
+#s1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+img.ig1{
+    height: 80px;
+    width: 80px;
+    
+}
+.div2,.div3,.div4,.div5{
+    display: grid;
+    grid-template-columns: 100px 100px ;
+}
+#s2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+b{
+    display: flex;
+    flex-direction: column;
+}
+#s3{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+#s3>img{
+    height: 300px;
+    width: 350px;
+    justify-content: space-evenly;
+}
+#i6{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+#p1:hover{
+    transform: translatey(-10px)
+}
+#p2:hover{
+    transform: translatex(-10px)
+}
+#inp:hover{
+    transform: scaleX(2);
+}
+.im1:hover{
+    transform: scale3d(2,2,0);
+}
+img[alt="j"]:hover{
+    transform: scale3d(1.5,1.5,1.5);
+}
+.ig1:hover{
+    transform: skew(30deg)
+}
