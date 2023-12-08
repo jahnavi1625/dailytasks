@@ -56,7 +56,11 @@ div#i1{
     color: white;
 }
 i{
-    background-color: white;
+    height: 24px;
+    background-color: orange;
+    position: relative;
+    top: 30px;
+    right: 30px;
 }
 a[id="a1"]{
    position: relative;
@@ -78,9 +82,18 @@ input[id="inp"]{
     position: relative;
     left: 50px;  
 }
+.fa-location-crosshairs{
+    background-color: rgb(243, 248, 246);
+    color: black;
+    top: 25px;
+    left: 20px;
+}
 .fa-cart-shopping{
+    color: black;
+    background-color: white;
     position: relative;
-    top: 80px;
+    left: 20px;
+    top: 60px;
 }
 img.im1{
     height: 100px;
