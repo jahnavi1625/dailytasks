@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-image: url(https://wallup.net/wp-content/uploads/2016/01/309113-colorful-multi_color-abstract-Microsoft_Windows.jpg); */
+            background-image: linear-gradient(to right,rgb(80, 128, 204),rgb(28, 146, 28));
+        }
+        #d1,#d2,#d3,#d4{
+            height: 100px;
+            width: 100px;
+            border: 1px solid rgb(252, 251, 251);
+        }
+        .dp{
+            position: relative;
+            top: 200px;
+            left: 650px;
+            display: grid;
+            grid-template-columns: 106px 106px;
+            grid-template-rows: 106px 106px;
+            
+        }
+        #d1{
+            background-color: red;
+            box-shadow: 3px 3px rgb(253, 252, 252) ;
+            animation: colorchange 3s 2s linear 2;
+        }
+        #d2{
+            background-color: green;
+            box-shadow: 3px 3px rgb(253, 255, 253);
+            animation: colorchange 3s 2s linear 2;
+        }
+        #d3{
+            background-color: blue;
+            box-shadow: 3px 3px rgb(252, 252, 253);
+            animation: colorchange 3s 2s linear 2;
+        }
+        #d4{
+            background-color: yellow;
+            box-shadow: 3px 3px rgb(252, 252, 251);
+            animation: colorchange 5s 2s linear 2;
+        }
+        @keyframes colorchange
+        {
+            from{
+
+            }
+            to{
+                background-color: rgb(96, 6, 96);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dp">
+        <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    </div>
+</body>
+</html>

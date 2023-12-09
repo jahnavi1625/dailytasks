@@ -1,0 +1,53 @@
+body{
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.bl7mptYwBVkUUERBJ1W0CwHaDu&pid=Api&P=0&h=220);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+section{
+    width: 100%;
+    display: flex;
+   top: 120px;
+    position: relative;
+    left: 25%;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+aside{
+    margin-right: 100px;
+}
+#d3{
+    width: 320px;
+}
+.sp{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+i{
+    color: white;
+    height: 30px;
+    width: 30px;
+    font-size: x-large;
+}#d1{
+    width: 350px;
+    background-color: rgb(32, 110, 132);
+    color: white;
+    border: none;
+    border-radius: 2%;
+}
+ul{
+    
+    display: grid;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 50px 50px; 
+}
+.l1{
+    background-color: rgb(33, 111, 142);
+    color: white;
+    list-style-type: none;
+    border: 3px solid rgb(32, 172, 200);
+}

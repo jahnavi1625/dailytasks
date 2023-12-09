@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+         {
+           background:#0b0a0a;
+         }
+         span
+        {
+          position:absolute;
+          top:50%;
+          left:50%;
+          width:10%;
+          height:4px;
+          animation:animate 2s linear infinite;
+        }
+        span::before
+        {
+            content:'';
+            position:absolute;
+            border-style: hidden;
+            border: 3px solid yellow;
+            border-radius: 10%;
+            border-top: 16px solid yellow;
+            width:2px;
+            height:3px;
+            background:#fff000;
+            
+        }
+           @keyframes animate
+           {
+             0%
+               {
+                 transform:rotate(0deg);
+               }
+             100%
+             {
+                  transform:rotate(360deg);
+             }
+           }
+           h4{
+            color: #fff000;
+            height: 20px;
+            position: relative;
+            left: 800px;
+            top: 320px;
+           }
+           .loader {
+            position: relative;
+            left: 750px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg);
+   }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+    </style>
+</head>
+<body>
+   <h4>Loading</h4>
+    <div id="ring">
+        <span></span>
+    </div>
+    <div class="loader"></div>
+</body>
+</html>
