@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        input[type="button"]{
+            padding: 15px;
+            width: 285px;
+            border: none;
+            color:rgb(160, 41, 138);
+            font-weight: bolder;
+        }
+        .name{
+            padding: 10px;
+            width: 260px;
+        }
+        div{
+            transform: translate(60px,30px);
+        }
+        body{
+            background-color: rgb(71, 70, 70);
+        }
+        #d1{
+            background-color: rgb(5, 1, 1);
+            padding: 20px;
+            position: relative;
+            top: 60px;
+            left: 580px;
+            width: 320px;
+            box-sizing: border-box;
+            line-height: 60px;
+        }
+        input[type="email"]:valid{
+            background-color: rgb(193, 244, 56);
+        }
+        input[type="email"]:invalid{
+            background-color: rgb(233, 59, 59);
+        }
+        input[type="password"]:valid{
+           background-color:rgb(193, 244, 56) ;
+        }
+        input[type="password"]:invalid{
+           background-color:rgb(233, 59, 59) ;
+        }
+        .fa-twitter{
+            color: white;
+        }
+        .fa-facebook{
+            color: white;
+        }
+        .fa-square-instagram{
+            color: white;
+        }
+        #icons{
+            position: relative;
+            left: -50px;
+            top: -40px;
+            display: grid;
+            grid-template-columns: 30px 30px 30px;
+            justify-content: space-evenly;
+        }
+        input[type="button"]:active{
+            background-color: rgb(211, 143, 69);
+        }
+        i{
+            font-size:25px;
+        }
+        a{
+            color: rgb(255, 251, 0);
+        }
+    </style>
+</head>
+<body>
+    <div  id="d1">
+        <form action="#">
+            <input type="button" value="Login or Sign in">
+            <input class="name" type="email" placeholder="UserName" pattern="[a-z0-9@a-z\.\a-z]{0,40} required">
+            <input class="name" type="password" placeholder="Password" pattern="[a-zA-Z@0-9]{3,9}">
+            <div>
+                <a href="#">Not a user?</a>
+            <a href="#">SignUp</a>
+            </div>
+            <div id="icons">
+                <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
