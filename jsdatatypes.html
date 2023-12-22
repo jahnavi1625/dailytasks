@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            font-weight: bold;
+        }
+        p{
+            color: blue;
+        }
+        pre{
+            color: rgb(226, 149, 6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages.</p>
+    <p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</p>
+    <dl>
+        <dt>Javascript has 8 datatypes</dt>
+        <dd><ol>
+            <li>String
+                <p>A string (or a text string) is a series of characters like "John Doe".
+
+                    Strings are written with quotes. You can use single or double quotes:</p>
+                    <pre>
+                        var carName1 = "Volvo XC60";
+                    </pre>
+            </li>
+            <li>Number
+                <p>All JavaScript numbers are stored as decimal numbers (floating point).</p>
+                <pre>
+                    let x1 = 34.00;
+                </pre>
+            </li>
+            <li>Bigint
+                <p>JavaScript BigInt is a new datatype (ES2020) that can be used to store integer values that are too big to be represented by a normal JavaScript Number.</p>
+                <pre>
+                    let x = BigInt("123456789012345678901234567890");
+                </pre>
+            </li>
+            <li>Boolean
+                <p>Booleans can only have two values: true or false.</p>
+                <pre>
+                    var num=true;
+                </pre>
+            </li>
+            <li>Undefined
+                <p>In JavaScript, a variable without a value, has the value undefined. The type is also undefined.</p>
+                <pre>
+                    var car;
+                    var car = undefined;
+                </pre>
+            </li>
+            <li>Null
+                <p>The null value represents the intentional absence of any object value. It is one of JavaScript's primitive values</p>
+                <p>The value null is written with a literal: null. null is not an identifier for a property of the global object, like undefined can be. Instead, null expresses a lack of identification, indicating that a variable points to no object. In APIs, null is often retrieved in a place where an object can be expected but no object is relevant.</p>
+                <pre>
+                    var num = null;
+                    typeof null; // "object"
+                </pre>
+            </li>
+            <li>Symbol</li>
+            <li>Object</li>
+        </ol></dd>
+        <dt>The Object Datatype can contain</dt>
+        <dd><ol>
+            <li>An object
+                <p>JavaScript objects are written with curly braces {}.
+
+                    Object properties are written as name:value pairs, separated by commas.</p>
+                    <pre>
+                        const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+                    </pre>
+            </li>
+            <li>An array
+                <p>JavaScript arrays are written with square brackets.
+
+                    Array items are separated by commas.</p>
+                    <pre>
+                        var cars = ["Saab", "Volvo", "BMW"];
+                    </pre>
+            </li>
+            <li>A date
+                <p>By default, JavaScript will use the browser's time zone and display a date as a full text string:
+
+                    Fri Dec 22 2023 19:50:11 GMT+0530 (India Standard Time)</p>
+                    <pre>
+                        new Date()
+                        new Date(date string)
+                        new Date(year,month)
+                        new Date(year,month,day)
+                        new Date(year,month,day,hours)
+                        new Date(year,month,day,hours,minutes)
+                        new Date(year,month,day,hours,minutes,seconds)
+                        new Date(year,month,day,hours,minutes,seconds,ms)
+                        new Date(milliseconds)
+                    </pre>
+            </li>
+        </ol></dd>
+        <dt>Arthematic Operators
+            <p>A typical arithmetic operation operates on two numbers.</p>
+        </dt>
+        <dd><ol>
+            <li>'+' Addition</li>
+            <li>'-' Substraction</li>
+            <li>'*' Multiplication</li>
+            <li>'/' Division</li>
+            <li>'%' Remainder</li>
+            <li>'++' Incrementing</li>
+            <li>'--' Decrementing</li>
+            <li>'**' Exponentiation</li>
+        </ol></dd>
+    </dl>
+</body>
+</html>
