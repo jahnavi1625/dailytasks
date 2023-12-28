@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Js Programs
+    </h3>
+    <script>
+        console.log("Increasing pattern");
+        let n=5;
+        for(let i=1;i<=n;i++)
+        {
+            for(let j=1;j<=i;j++)
+            {
+                   console.log(j);
+            }
+            console.log('\n')
+        }
+
+        console.log("Decreasing pattern");
+        let m=4;
+        for(let i=4;i>=0;i--)
+        {
+            for(let j=1;j<=i;j++)
+            {
+                   console.log(j);
+            }
+            console.log('\n')
+        }
+
+        console.log("prime numbers from 1 to 100");
+        for(i=1;i<=100;i++)
+        {
+            for(j=2;j<=i;j++)
+            {
+                if(i%j==0){
+                    flag=1;
+                    break;
+                }
+            }
+            if(i==j)
+        {
+            console.log(i);
+        } 
+        }
+
+        // for(i=1;i<=100;i++)
+        // {
+        //     var flag=0;or var prime=true;
+        //     for(let j=2;j<i;j++)
+        //     {
+        //         if(i%j==0)
+        //         {
+        //             flag=1;or prime=false
+        //             break;
+        //         }
+        //     }
+        //     if(flag==0)or if(prime)
+        //     {
+        //         console.log(i);
+        //     }
+        // }
+
+        console.log("Fibnocci series")
+        var n1=0,n2=1;
+        
+        console.log(n1)
+        console.log(n2)
+        for(let i=2;i<=10;i++)
+        {
+            var n3=n1+n2;
+           console.log(n3);
+           n1=n2;
+           n2=n3;
+        }
+        
+    //     console.log("Changing the key name");
+    //     let employee = {
+    //        "name": "janu"
+    //         };
+    //   console.log(employee);
+    //     function renameKey(obj, old_key, new_key) {
+    //     if (old_key !== new_key) {
+    //      Object.defineProperty(obj, new_key,
+    //      Object.getOwnPropertyDescriptor(obj, old_key));
+    //      delete obj[old_key];
+    //     }
+    //    }
+    //    function rename() {
+    //    employee.forEach(obj => renameKey(employee, 'salary', 'salaryOfEmployee'));
+    //    console.log(employee);
+    //    }
+    //    rename();
+    </script>
+</body>
+</html>
