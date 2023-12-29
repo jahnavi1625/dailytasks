@@ -13,22 +13,24 @@
         let n=5;
         for(let i=1;i<=n;i++)
         {
+            let line="";
             for(let j=1;j<=i;j++)
             {
-                   console.log(j);
+                  line+=j;
             }
-            console.log('\n')
+            console.log(line);
         }
 
         console.log("Decreasing pattern");
         let m=4;
         for(let i=4;i>=0;i--)
         {
+            let line1="";
             for(let j=1;j<=i;j++)
             {
-                   console.log(j);
+                line1+=j;
             }
-            console.log('\n')
+            console.log(line1)
         }
 
         console.log("prime numbers from 1 to 100");
@@ -94,6 +96,12 @@
     //    console.log(employee);
     //    }
     //    rename();
+    let employee = {
+       "name": "janu"
+           };
+           employee.namevalue=employee.name;
+           delete employee.name;
+           console.log(employee);
     </script>
 </body>
 </html>
