@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Let Us Do</h1>
+    <script>
+        var student={
+            name:"Jahnavi",
+            id:1239,
+            branch:"CSE",
+            College:"ssit",
+            YearOfPassed:2023,
+        }
+        console.log(Object.keys(student));
+        console.log(Object.values(student));
+        console.log(Object.entries(student));
+        console.log(student.hasOwnProperty('id'));
+        for(var key in student)
+        {
+            console.log(key)
+        }
+        for(var value of Object.values(student))
+        {
+            console.log(value)
+        }
+        console.log("Reassigning the values");
+        console.log("For numbers");
+        var i=5;
+        var j=i;
+        console.log(i,j);
+        j=12;
+        console.log(i,j);
+        console.log("For objects");
+        var obj={
+            id:39,
+            name:"janu",
+        };
+        var obj1=obj;
+        console.log(obj,obj1);
+        obj1.name="dp";
+        console.log(obj,obj1);
+        
+        var obj2=Object.assign({color:'orange'},obj);
+        console.log(obj,obj2);
+        obj2.name="Dp";
+        console.log(obj,obj2);
+
+        var obj3={...obj};
+        console.log(obj,obj3);
+        obj3.name="dpjan";
+        console.log(obj,obj3);
+
+        console.log("let us see freeze and seal");
+        console.log("freeze cannot update and add")
+        var newObj={
+            sname:"Jahnavi",
+            fathername:"venkataKrishna"
+        }
+        var newobj=Object.freeze(newObj);
+        console.log("before",newObj,newobj);
+        newobj.sname="jan";
+        newobj.age=22,
+        delete newobj.sname;
+        console.log("After",newObj,newobj);//operations not work here let us see seal
+
+
+        var objectSeal={
+            color:'black',
+            number:3
+        }
+        console.log("seal can update but not add")
+        var newobj2=Object.seal(objectSeal);
+        console.log("before",objectSeal,newobj2);
+        newobj2.color="red";
+        newobj2.age=22;//cannot add
+        delete newobj2.color;//cannot delete
+        console.log("After",objectSeal,newobj2);
+    </script>
+</body>
+</html>
