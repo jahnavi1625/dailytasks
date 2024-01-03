@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        patterns
+    </h3>
+    <script>
+        console.log("Increasing pattern")
+        for(let i=1;i<=5;i++)
+    {
+      let line="";
+      for(let j=1;j<=i;j++)
+      {
+        line+='*';
+      }
+      console.log(line);
+    }
+
+    console.log("decreasing pattern")
+        for(let i=5;i>=1;i--)
+    {
+      let line="";
+      for(let j=1;j<=i;j++)
+      {
+        line+='*';
+      }
+      console.log(line);
+    }
+    console.log("diamond pattern")
+    let n=8;
+    let c=n-1;
+        for(let i=1;i<=n;i++)
+    {
+      let line="";
+      for(let j=1;j<=c;j++)
+      {
+        line+=" ";
+        c--;
+    }
+    for(let i=1;i<=2*i-1;i++){
+      line+="*"
+    }
+      console.log(line);
+    }
+
+
+
+    console.log("greater in three numbers");
+    var n1=3,n2=5,n3=1;
+    n1>n2 && n1>n3?console.log(n1+" is greater than"+n2+" and "+n3):n2>n1 && n2>n3?console.log(n2+" is greater than "+n1+" and "+n3):n3>n1 && n3>n2?console.log(n3+" is greater than "+n1+" and "+n2):console.log("");
+
+    var str="jAhNavI";
+    let result=""
+    for(let i=0;i<str.length;i++)
+    {
+        if(str[i].toLowerCase()===str[i])
+        {
+            result+=str[i].toUpperCase();
+        }
+        else{
+            result+=str[i].toLowerCase();
+        }
+       
+    }
+    console.log(result)
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Js Programs</h1>
+    <script>
+        function CheckArmstrong(num){
+    let sum = 0;
+    let temp = num;
+    while (temp > 0) {
+        let remainder=temp%10;
+        sum=sum+remainder*remainder*remainder;
+        temp=temp/10;
+    }
+
+    if (sum==num) {
+        return `${num} is an Armstrong number`
+    }
+    else {
+        return `${num} is not an Armstrong number`
+    }
+}
+
+console.log(CheckArmstrong(153));
+console.log(CheckArmstrong(370));
+console.log(CheckArmstrong(371));
+console.log(CheckArmstrong(407));
+    
+
+     function multiplesNumber(num){
+        num%3==0 && num%5==0 ?console.log(num+" FizzBuzz"):num%5==0?console.log(num+" Buzz"):num%3==0?console.log(num+" Fizz"):console.log(num);
+
+     }
+    for(let i=1;i<=15;i++)
+    {
+        multiplesNumber(i)
+    }
+    console.log("ProblemSolving code")
+    function sold(num){
+        var n1=5;
+    
+
+    if(num>n1){
+        console.log("value " +(n1+(num-n1)*2));
+    }
+    else{
+        console.log("value "+num);
+    }
+    }
+    sold(3)
+    sold(8)
+
+    
+    
+    </script>
+     
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js program</h1>
+    <script>
+        console.log("difference between slice  and  substr : ");
+        var nam="Jahnavi is a recharla family";
+        var resSlice=nam.slice(1,1);
+        var resSub=nam.substring(1,1);
+        console.log("Slice is empty here : "+resSlice);
+        console.log("Substr is empty here : "+resSub);
+        var namee="Jahnavi is a recharla family";
+        var resSlice1=namee.slice(4,1);
+        var resSub1=namee.substring(4,1);
+        console.log("Slice is empty here if start > end : "+resSlice1);
+        console.log("Substr is not empty here start > end: "+resSub1);
+        var nameee="Jahnavi is a recharla family";
+        var resSlice2=nameee.slice(4,'j');
+        var  resSub2=nameee.substring(4,'j');
+        console.log("Slice is empty here if start > end : "+resSlice2);
+        console.log("Substr is not empty here start > end: "+resSub2);
+        var nameeee="Jahnavi is a recharla family";
+        var resSlice3=nameeee.slice(-1,4);
+        var resSub3=nameeee.substring(-1,4);
+        console.log("Slice is empty here if given negative : "+resSlice3);
+        console.log("Substr is not empty here if given negative : "+resSub3);
+        var nams="Jahnavi is a recharla family";
+        var resSlice4=nams.slice(-1,23);
+        var resSub4=nams.substring(-1,50);
+        console.log("Slice is empty here if given negative : "+resSlice4);
+        console.log("Substr is not empty here if given negative : "+resSub4);
+        console.log('\n');
+
+        console.log("line characters and words in a string");
+        var str="The Taj Mahal was designated as UNESCO World Heritage Site."
+        var charac=str.length;
+        console.log("The number of characters in a string : "+charac);
+        str=str.split(" ");
+        console.log(str);
+        console.log("The number of words in a string : "+str.length);
+            
+        console.log('\n');
+        console.log("converting string to array and array to string");
+        var str1="Narasimha";
+        var arr=[];
+        for(let i=0;i<str1.length;i++){
+            arr.push(str1[i]);
+        }
+        console.log(arr);
+        console.log("Converted to string with separated commas : "+arr.toString());
+        console.log("Converted to string without commas : "+arr.join(""));
+        console.log("Converted to string with separated hyphen   : "+arr.join("-"));
+        
+        console.log('\n');
+        console.log("Phone number and adding a number");
+        var phno=[8,3,6,4,7,0,2,4,8,5];
+        var add=1;
+        console.log(phno);
+        console.log("Before adding any number : "+phno.join(""))
+        for(let i=0;i<phno.length;i++){
+            phno[i]+=add;
+        }
+        console.log("After adding plus 1 : "+phno.join(""))
+    </script>
+</body>
+</html>
