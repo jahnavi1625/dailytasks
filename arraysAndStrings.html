@@ -37,12 +37,23 @@
         console.log('\n');
 
         console.log("line characters and words in a string");
-        var str="The Taj Mahal was designated as UNESCO World Heritage Site."
-        var charac=str.length;
-        console.log("The number of characters in a string : "+charac);
-        str=str.split(" ");
-        console.log(str);
-        console.log("The number of words in a string : "+str.length);
+        
+        var str=`The Taj Mahal is located on the right
+         bank of the Yamuna River in a vast Mughal
+          garden that encompasses nearly 17 hectares,
+           in the Agra District in Uttar Pradesh.
+            It was built by Mughal Emperor Shah Jahan 
+            in memory of his wife Mumtaz Mahal with construction 
+            starting in 1632 AD and completed in 1648 AD, with 
+            the mosque, the guest house and the main gateway on the 
+            south, the outer courtyard and its cloisters were added 
+            subsequently and completed in 1653 AD.`;
+        var char=str.split("").length;
+        console.log(`no of characters ${char}`);
+        var words=str.split(" ").length;
+        console.log(`no of words are ${words}`);
+        var lines=str.split("\n").length;;
+        console.log(`no of lines are ${lines}`);
             
         console.log('\n');
         console.log("converting string to array and array to string");
