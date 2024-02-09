@@ -1,55 +1,52 @@
-// function validateForm(event){
-//     event.preventDefault();//synthetic events to make not to go in browser
-//     let res=document.forms['form1']['name'].value;
-//     console.log(res);
-//     if(res==''){
-//         // alert("name must be given")
-//         // document.write("name")
-//         document.getElementById('para').innerText="name must be given;"
-//     }
-//     else{
-//         document.getElementById('para').innerText=`${res} hello hi how do you do`;
-//     }
-//     return false;
+
+// const divCon=document.getElementById('container');
+// const header1=document.createElement('h1');
+// header1.innerText="heaader from js";
+// divCon.appendChild(header1);
+// const hsEl=document.getElementById('h5El');
+// divCon.appendChild(hsEl);
+// divCon.appendChild(header1);
+// divCon.insertBefore(header1,hsEl);
+
+// function addFunc(){
+//     const ulCon=document.querySelector('#ulCon');
+//     // const li=document.querySelector('li');
+//     // li.innerHTML="services";
+//     // ul.appendChild(li);//id we do like this seervices added at the end but first eleent is deleted
+
+//     const list=document.createElement('li');
+//     list.innerHTML="services";
+//     ulCon.appendChild(list);
+//     console.log(ulCon.children[1]);
+//     ulCon.insertBefore(list,ulCon.children[1]);
 // }
 
-// function changeName(event){
-// //   console.log(event);
-// console.log(event.target.value);
-
+// function removeFunc(){
+//     const ulCon=document.querySelector('#ulCon');
+//     ulCon.removeChild(ulCon.children[3]);
 // }
 
-// function changeColor(){
-//     document.body.style.backgroundColor='black';
-//     document.body.style.color='white';
+//BOM
+// console.log(window);
+// function addFunc(){
+//   window.location.reload();//reloaded when clicked
 // }
+let flag=false;
+const bm=document.getElementById('burger');
+document.addEventListener('DOMContentLoaded',()=>{
+    
+    const navlink=document.getElementById('navlinks');
+    bm.addEventListener('click',()=>{
+        navlink.classList.toggle('show');//want to use based upon css use classList
+        flag=!flag;
+        console.log(flag);
+        if(flag){
+            bm.innerHTML="&#9776";
+        }
+        else{
+            bm.innerHTML="&#10060";
+        }
+        
+    });
+});
 
-// function changeBgColor(){
-//     document.body.style.backgroundColor='red';
-// }
-
-// function mouseOut(obj){//taking the this instance is another way by calling just mouseOut() in html and here function with mouseOut() then use document
-//     // obj.innerText="DurgaPrasad";//mouse events take current instance
-//     document.querySelector('p').innerText="Durga"
-// }
-
-//adding events dynamically
-// document.getElementById('p1').addEventListener('click',mouseOut);
-// function mouseOut(){//taking the this instance is another way by calling just mouseOut() in html and here function with mouseOut() then use document
-//       document.querySelector('p').innerText="Durga"
-//       document.querySelector('p').style.backgroundColor="green"
-//       document.querySelector('p').style.color="white"
-//      }
-
-document.getElementById('p2').addEventListener('click',pclick);
-document.querySelector('div').addEventListener('click',dclick);
-
-function pclick(){
-    document.getElementById('p2').innerHTML="changed";
-    document.getElementById('p2').style.backgroundColor='orange'
-}
-
-function dclick(){
-    document.getElementById('p2').innerText="again changed";
-    document.querySelector('div').style.backgroundColor='grey'
-}
